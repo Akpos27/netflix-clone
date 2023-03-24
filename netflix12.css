@@ -5,6 +5,7 @@ body{
     box-sizing: border-box;
     background-color: black;
     color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .landing-page{
     background: linear-gradient(#1e1d1d96, #100b0bc9),  url(background.jpg);
@@ -77,26 +78,30 @@ button[type="button"]{
 
 .sect{
     display: flex;
-    justify-content: space-between;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
     
     
 }
-.second{
-    padding-left: 10%;
+
+.first{
+    width: 40%;
+
+    align-self: center;
+    
 }
-.second h1{
-    padding: 8rem 0rem 0rem 0rem;
+.content{
+   align-self: center;
+    width: 40%;
+  
 }
+
 h1{
     font-size: 3.2rem;
 }
-.content{
-    padding: 6rem 18rem 0rem 0rem;
-}
-.fourth{
-    padding: 4rem 0rem 4rem 16rem;
-}
+
 .sixth{
     display: flex;
     justify-content: center;   
@@ -130,3 +135,49 @@ footer{
     margin-top:-0rem;
 }
 
+
+
+/**responsiveness begins here
+for mobile view of 450px and below**/
+@media screen and (max-width: 480px) {
+/* styling for landing page sign in */
+    .first-page-sign{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+    }
+   /* styling for main content */
+   .sect{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;   
+    }
+    .first,.content{
+        width: 90%;
+        
+    } 
+    h1{
+    font-size: 2rem;
+    }
+    .content, .fourth{
+        text-align: center;
+    }
+    .mutate1{
+        order: 1;
+    }
+    .mutate{
+        order: 2;
+    }
+    /* styling for footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .secondd{
+        padding-top: 0rem;
+        padding-left: 0.5rem;
+    }
+}

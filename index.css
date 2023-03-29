@@ -13,6 +13,10 @@ body{
     margin: 0;
    
 }
+P{
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* styling for header */
 header{
@@ -42,12 +46,15 @@ button[type="submit"]{
    flex-direction: column;
    text-align: center;
    font-size: 1.8rem;
-   margin-top: 6rem;
+   margin-top: 7rem;
    line-height: 0.7;
    font-family: sans-serif;
 }
 .first-page-text{
     width: 100%;
+}
+#ppp{
+    margin-top: 2rem;
 }
 input[placeholder="Email Address"]{
     padding: 1.42rem 0.5rem 1.1rem;
@@ -65,7 +72,7 @@ input[placeholder="Email Address"]{
 
 }
 button[type="button"]{
-    background-color: red;
+    background-color: rgb(246, 3, 3);
     border-color: red;
     color: #fff;
     border-radius: 0.4rem;
@@ -103,25 +110,21 @@ h1{
 }
 .fourth{
     display: flex;
-    margin-left: 15rem;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
-    justify-content: flex-start;
-    align-items: center;
-}
-.fourthh{
-    display: flex;
     flex-direction: column;
-    justify-content:flex-start;
-    align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    margin-left: 15rem;
+    justify-content: flex-start;
 }
 .fourth h1{
     width: 30%;
 }
 .fourth p{
     margin-top: -1rem;
-    width: 50%;
-    font-size: 1.7rem;
+    width: 30%;
+    font-size: 1.3rem;
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .sixth{
@@ -162,7 +165,7 @@ footer{
 /**responsiveness begins here
 for mobile view of 450px and below**/
 /* styling for landing page sign in */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     .first-page-sign {
         
     }
@@ -184,15 +187,16 @@ for mobile view of 450px and below**/
 
         }
         .content>h1{
-            font-size: 2.3rem;
+            font-size: 2.1rem;
             margin-left: 0rem;
             text-align: center;
+            margin-top: 1.4rem;
         }
         .content>p{
-            margin-top: 0rem;
+            margin-top: -0.2rem;
             text-align: center;
-            width: 100%;
-            font-size: 18px;
+            width: 90%;
+            font-size: 17px;
         }
         .first-page-text{
             display: flex;
@@ -204,61 +208,67 @@ for mobile view of 450px and below**/
         .first-page-text>h2{
             font-size: 1.9rem;
             padding: 1rem 0rem;
-            line-height: 1.3;
+            line-height: 1.2;
             margin-top: 0rem;
             margin-bottom: 1rem;
         }
         .first-page-text>p{
-            font-size: 18px;
+            font-size: 16px;
             padding: 0rem 2rem;
             line-height: 1.2;
-            margin-top: -1.3rem;
+            margin-top: -1rem;
         }
         #ppp{
-            margin-top: 1rem;
-            line-height: 1.8rem;
+            text-align: center;
+            margin-top: 0.4rem;
+            line-height: 1.6rem;
         }
         .sign-in{display: none;}
         input[placeholder="Email Address"]{
-            width: 70%;
-            padding: 1rem 0.5rem 1.1rem;
+            width: 60%;
+            padding: 0.8rem 0.4rem 0.9rem;
         }
         button[type="button"]{
             background-color: red;
             border-color: red;
             color: #fff;
             border-radius: 0.4rem;
-            width: 30%;
-            padding:1rem 0.5rem;
+            width: 40%;
+            padding:0.6rem 0rem;
             font-weight: bold;
             font-size: large;
             margin-top: 1rem;
         }
         .landing-page{
             background: linear-gradient(#1e1d1d96, #100b0bc9),  url(background.jpg);
-            height: 80vh;
+            height: 90vh;
             margin: 0;
            
         }
-        .fourthh{
+        .fourth{
             display: flex;
             flex-direction:column;
-            justify-content: center;
-            margin-left: -12rem;
-            align-content: center;
+            margin-left: 0rem;
+            width: 100%;
+            align-items: center;
         }
-        .fourthh h1{
-            width: 80%;
-            justify-content: center;
-            margin-left:3rem;
-            font-size:2.3rem;
-            margin-top: 1rem;
+        .fourth h1{
+            width: 90%;
+            font-size:2rem;
+            margin-top: 1.2rem;
+            margin-left: 1.5rem;
+
         }
         .fourth p{
-            font-size: 20px;
             text-align: center;
-            width: 100%; 
+            width: 90%; 
             margin-top: -0.6rem;
+            font-size: 16px;
+            margin-left: 0.1rem;
+            line-height: 1.3rem;
+        }
+        .third h1{
+            width: 80%;
         }
 
   }
